@@ -1,0 +1,26 @@
+{
+  "products": [
+    {
+      "id": "102",
+      "name": "Samsung Galaxy S24 Ultra",
+      "description": "Description for Product 1",
+      "price": 1400,
+      "image": "product1.jpg"
+    },
+    {
+      "id": "104",
+      "name": "ASUS ROG Strix G17 - RTX 4060",
+      "description": "Description for Product 2",
+      "price": 1399,
+      "image": "product2.jpg"
+    },
+    {
+      "id": "106",
+      "name": "iPhone 18 Pro",
+      "price": 2000,
+      "description": "",
+      "imageUrl": ""
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

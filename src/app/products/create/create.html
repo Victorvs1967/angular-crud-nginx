@@ -1,0 +1,50 @@
+<div class="container">
+  <h2 class="mt-3 md-3">Add Product</h2>
+  <form>
+    <div class="mb-3">
+      <label class="form-label" for="productName">Product Name</label>
+      <input 
+        type="text" 
+        class="form-control" 
+        id="productName"
+        aria-describedby="emailHelp"
+        name="productName"
+        [(ngModel)]="newProductForm.name"
+        [ngModelOptions]="{standalone: true}"
+      />
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="productPrice">Product Price</label>
+      <input 
+        type="number" 
+        class="form-control" 
+        id="productPrice"
+        aria-describedby="emailHelp"
+        name="productPrice"
+        [(ngModel)]="newProductForm.price"
+        [ngModelOptions]="{standalone: true}"
+      />
+    </div>
+    <!-- <div class="mb-3">
+      <label class="form-label" for="productDescription">Description</label>
+      <textarea 
+        class="form-control" 
+        id="productDescription" 
+        [(ngModel)]="newProductForm.description"
+        [ngModelOptions]="{standalone: true}"
+      >
+      </textarea>
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="productImageUrl">Image URL</label>
+      <input 
+        type="text" 
+        class="form-control" 
+        id="productImageUrl" 
+        [(ngModel)]="newProductForm.imageUrl"
+        [ngModelOptions]="{standalone: true}"
+      />
+    </div> -->
+    <button type="submit" class="btn btn-primary" (click)="createProduct()">Submit</button>
+  </form>
+</div>
